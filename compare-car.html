@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compair Car | AutoWorld</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/favicon/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/compare-car.css">
+    <!-- Root CSS -->
+    <link rel="stylesheet" href="CSS/root.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-light navbar-expand-lg transparent fixed-top">
+            <a class="navbar-brand m-auto px-5" href="index.html">
+                <span>
+                    <img src="Images/favicon/logo-1.png" alt="Auto-World" class="" height="50px" width="70px">
+                </span>
+                Auto World
+            </a>
+
+            <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end bg-autoworld-sec text-light" id="navbarNav" tabindex="-1"
+                aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto px-5">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about-us.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="search-car.html" class="nav-link">Cars</a></li>
+                    </ul>
+
+                    <a href="Sign-up.html" class="btn btn-autoworld mx-4"><i class="fa fa-user-circle mx-2"></i>Sign
+                        up</a>
+                    <a href="Sign-in.html" class="btn btn-autoworld mx-4"><span class="sm-btn-i mx-2"><i
+                                class="fa-solid fa-right-to-bracket"></i></span>Login</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <!-- Top Section -->
+        <section class="top-section bg-autoworld-an d-flex flex-column justify-content-center px-5 position-relative"
+            style="height: 250px;">
+            <div class="container">
+                <h1 class="fw-bold display-4">Compare Car</h1>
+                <nav class="breadcrumb mt-2">
+                    <a href="index.html" class="text-dark fw-bold">Home</a> <span class="mx-2">—</span>
+                    <span class="text-muted">Comparision</span>
+                </nav>
+            </div>
+
+            <!-- Sorting Fields Overlapping -->
+            <div class="sorting-fields bg-white shadow p-4 rounded-3 position-absolute start-50 translate-middle-x"
+                style="top: 100%; margin-top: -2rem; z-index: 10; max-width: 1140px; width: 90%;">
+                <div class="container">
+                    <div class="row g-2 align-items-center justify-content-center">
+                        <!-- Brand Field 1 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <select name="Select-Car-Brands" id="Select-Car-Brands1" class="form-select w-100">
+                                <option selected disabled>Select Brand</option>
+                                <option value="Porsche 911">Porsche 911</option>
+                                <option value="Mercedes-Benz Vision EQXX">Mercedes-Benz Vision EQXX</option>
+                                <option value="Ford Bronco">Ford Bronco</option>
+                                <option value="Jeep Wrangler">Jeep Wrangler</option>
+                                <option value="Toyota 4Runner">Toyota 4Runner</option>
+                                <option value="Land Rover Defender">Land Rover Defender</option>
+                                <option value="BMW X5">BMW X5</option>
+                                <option value="Ferrari 296 GTB">Ferrari 296 GTB</option>
+                                <option value="Lamborghini Huracan">Lamborghini Huracan</option>
+                                <option value="McLaren 720S">McLaren 720S</option>
+                                <option value="Aston Martin DB11">Aston Martin DB11</option>
+                                <option value="Mercedes-AMG GT">Mercedes-AMG GT</option>
+                                <option value="Lexus LFA">Lexus LFA</option>
+                                <option value="Bugatti Chiron">Bugatti Chiron</option>
+                                <option value="Dodge Challenger">Dodge Challenger</option>
+                                <option value="Rolls-Royce Cullinan">Rolls-Royce Cullinan</option>
+                                <option value="Lucid Air">Lucid Air</option>
+                                <option value="Ford Mustang Mach-E">Ford Mustang Mach-E</option>
+                                <option value="Toyota Prius">Toyota Prius</option>
+                                <option value="Audi R8">Audi R8</option>
+                            </select>
+                        </div>
+                        <!-- Brand Field 2 -->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <select name="Select-Car-Brands" id="Select-Car-Brands2" class="form-select w-100">
+                                <option selected disabled>Select Brand</option>
+                                <option value="Porsche 911">Porsche 911</option>
+                                <option value="Mercedes-Benz Vision EQXX">Mercedes-Benz Vision EQXX</option>
+                                <option value="Ford Bronco">Ford Bronco</option>
+                                <option value="Jeep Wrangler">Jeep Wrangler</option>
+                                <option value="Toyota 4Runner">Toyota 4Runner</option>
+                                <option value="Land Rover Defender">Land Rover Defender</option>
+                                <option value="BMW X5">BMW X5</option>
+                                <option value="Ferrari 296 GTB">Ferrari 296 GTB</option>
+                                <option value="Lamborghini Huracan">Lamborghini Huracan</option>
+                                <option value="McLaren 720S">McLaren 720S</option>
+                                <option value="Aston Martin DB11">Aston Martin DB11</option>
+                                <option value="Mercedes-AMG GT">Mercedes-AMG GT</option>
+                                <option value="Lexus LFA">Lexus LFA</option>
+                                <option value="Bugatti Chiron">Bugatti Chiron</option>
+                                <option value="Dodge Challenger">Dodge Challenger</option>
+                                <option value="Rolls-Royce Cullinan">Rolls-Royce Cullinan</option>
+                                <option value="Lucid Air">Lucid Air</option>
+                                <option value="Ford Mustang Mach-E">Ford Mustang Mach-E</option>
+                                <option value="Toyota Prius">Toyota Prius</option>
+                                <option value="Audi R8">Audi R8</option>
+                            </select>
+                        </div>
+                        <!-- Search Button -->
+                        <div class="col-12 col-lg-4 d-grid">
+                            <button type="button" class="btn btn-autoworld-dec btn-autoworld-dec-i btn-autoworld-dec-pt p-3 w-100">
+                                <span class="position-relative">
+                                    Compare
+                                    <i class="fa fa-arrow-right ms-2"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Compare Car Area -->
+        <section class="compare-car-area">
+            <div class="container">
+                <div class="row g-4">
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="text-center text-lg-start bg-autoworld-sec text-light mt-5">
+        <!-- Date & Time Section -->
+        <section>
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 d-flex justify-content-between">
+                        <p id="dateTime" class="mt-3 ms-2"></p>
+                        <p id="geoLocation" class="mt-3 ms-2"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            <section>
+                <div class="container text-center text-md-start mt-">
+                    <div class="row footer-row-custom">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <img src="Images/favicon/logo-1.png" alt="" height="40px" width="50px" class="footer-logo">
+                                AutoWorld
+                            </h6>
+                            <p>
+                                Discover a wide range of cars to suit your style and budget. Performance, safety, and design
+                                all in one place.
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Cars
+                        </h6>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Audi</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Toyota</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Tesla</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">BMW</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p><a href="feedback.html" class="text-reset footer-a-txt-dec-none-class">Feedback</a></p>
+                        <p><a href="compare-car.html" class="text-reset footer-a-txt-dec-none-class">Compare</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Search Car</a></p>
+                        <p><a href="Sign-up.html" class="text-reset footer-a-txt-dec-none-class">Accounts</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <span>Get connected with us on social networks:</span>
+            <div>
+                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            AutoWorld © 2025 Copyright:
+            <a class="text-reset fw-bold" href="index.html">autoworld.com</a>
+        </div>
+    </footer>
+    <div class="gtranslate_wrapper"></div>
+
+    <script>
+        window.gtranslateSettings = {
+            default_language: "en",
+            languages: [
+                "en",
+                "it",
+                "es",
+                "fr",
+                "de",
+                "nl",
+                "da",
+                "pt",
+                "ar",
+                "zh-CN",
+                "ms",
+                "cs",
+                "sk",
+                "hu",
+                "bg",
+                "pl",
+                "ro",
+                "hr",
+                "sl",
+                "sr",
+                "bs",
+            ],
+            wrapper_selector: ".gtranslate_wrapper",
+        };
+
+        // This is for footer
+
+    function showDateTime() {
+        var now = new Date();
+        var dateTimeElement = document.getElementById('dateTime');
+        dateTimeElement.textContent = 'Date & Time: ' + now.toLocaleString();
+    }
+    setInterval(showDateTime, 1000); 
+
+    function showGeolocation() {
+        var geoLocationElement = document.getElementById('geoLocation');
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                geoLocationElement.textContent = 'Location: Latitude ' + latitude.toFixed(2) + ', Longitude ' + longitude.toFixed(2);
+            }, function () {
+                geoLocationElement.textContent = 'Location: Unable to retrieve location.';
+            });
+        } else {
+            geoLocationElement.textContent = 'Location: Geolocation not supported.';
+        }
+    }
+    showGeolocation();
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js"></script>
+
+    <!-- Script & CDn's -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/navbar-light.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const compareButton = document.querySelector('.btn-autoworld-dec');
+            const carSelection1 = document.getElementById('Select-Car-Brands1');
+            const carSelection2 = document.getElementById('Select-Car-Brands2');
+            const carDetailsContainer = document.querySelector('.compare-car-area .container .row');
+
+            const carData = {
+                "Porsche 911": {
+                    name: "Porsche 911",
+                    model: "K87",
+                    type: "SUV",
+                    fuel: "Petrol",
+                    price: "$80,000",
+                    mileage: "25,000 miles",
+                    engine: "2000cc",
+                    img: "Images/Car Images/Porsche-911.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Mercedes-Benz Vision EQXX": {
+                    name: "Mercedes-Benz Vision EQXX",
+                    model: "EQXX",
+                    type: "Electric",
+                    fuel: "Electric",
+                    price: "$100,000",
+                    mileage: "N/A",
+                    engine: "Electric Motor",
+                    img: "Images/Car Images/EQXX.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Ford Bronco": {
+                    name: "Ford Bronco",
+                    model: "2023",
+                    type: "SUV",
+                    fuel: "Petrol",
+                    price: "$40,000",
+                    mileage: "10,000 miles",
+                    engine: "2500cc",
+                    img: "Images/Car Images/ford bronco.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Jeep Wrangler": {
+                    name: "Jeep Wrangler",
+                    model: "JL",
+                    type: "SUV",
+                    fuel: "Petrol",
+                    price: "$50,000",
+                    mileage: "15,000 miles",
+                    engine: "3000cc",
+                    img: "Images/Car Images/Jeep Wrangler.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Toyota 4Runner": {
+                    name: "Toyota 4Runner",
+                    model: "SR5",
+                    type: "SUV",
+                    fuel: "Petrol",
+                    price: "$45,000",
+                    mileage: "20,000 miles",
+                    engine: "3500cc",
+                    img: "Images/Car Images/Toyota 4Runner.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Land Rover Defender": {
+                    name: "Land Rover Defender",
+                    model: "110",
+                    type: "SUV",
+                    fuel: "Diesel",
+                    price: "$70,000",
+                    mileage: "30,000 miles",
+                    engine: "3000cc",
+                    img: "Images/Car Images/Land Rover Defender.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "BMW X5": {
+                    name: "BMW X5",
+                    model: "M50i",
+                    type: "SUV",
+                    fuel: "Petrol",
+                    price: "$75,000",
+                    mileage: "20,000 miles",
+                    engine: "4000cc",
+                    img: "Images/Car Images/bmw x5.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Ferrari 296 GTB": {
+                    name: "Ferrari 296 GTB",
+                    model: "GTB",
+                    type: "Sports",
+                    fuel: "Petrol",
+                    price: "$300,000",
+                    mileage: "5,000 miles",
+                    engine: "3000cc",
+                    img: "Images/Car Images/Ferrari 296 GTB .jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Lamborghini Huracan": {
+                    name: "Lamborghini Huracan",
+                    model: "EVO",
+                    type: "Sports",
+                    fuel: "Petrol",
+                    price: "$250,000",
+                    mileage: "3,000 miles",
+                    engine: "5000cc",
+                    img: "Images/Car Images/Lamborghini Huracan .jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "McLaren 720S": {
+                    name: "McLaren 720S",
+                    model: "720S",
+                    type: "Sports",
+                    fuel: "Petrol",
+                    price: "$280,000",
+                    mileage: "6,000 miles",
+                    engine: "4000cc",
+                    img: "Images/Car Images/Mclaren 720S.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Aston Martin DB11": {
+                    name: "Aston Martin DB11",
+                    model: "DB11",
+                    type: "Luxury",
+                    fuel: "Petrol",
+                    price: "$180,000",
+                    mileage: "10,000 miles",
+                    engine: "5000cc",
+                    img: "Images/Car Images/MArtin.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Mercedes-AMG GT": {
+                    name: "Mercedes-AMG GT",
+                    model: "GT",
+                    type: "Sports",
+                    fuel: "Petrol",
+                    price: "$150,000",
+                    mileage: "8,000 miles",
+                    engine: "4000cc",
+                    img: "Images/Car Images/Mercedes-AMG GT.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Lexus LFA": {
+                    name: "Lexus LFA",
+                    model: "LFA",
+                    type: "Sports",
+                    fuel: "Petrol",
+                    price: "$375,000",
+                    mileage: "2,000 miles",
+                    engine: "4000cc",
+                    img: "Images/Car Images/Lexus LFA.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Bugatti Chiron": {
+                    name: "Bugatti Chiron",
+                    model: "Chiron",
+                    type: "Supercar",
+                    fuel: "Petrol",
+                    price: "$3,000,000",
+                    mileage: "1,000 miles",
+                    engine: "8000cc",
+                    img: "Images/Car Images/Bugatti Chiron.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Dodge Challenger": {
+                    name: "Dodge Challenger",
+                    model: "SRT",
+                    type: "Muscle",
+                    fuel: "Petrol",
+                    price: "$65,000",
+                    mileage: "12,000 miles",
+                    engine: "6000cc",
+                    img: "Images/Car Images/dodge challenger.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Rolls-Royce Cullinan": {
+                    name: "Rolls-Royce Cullinan",
+                    model: "Cullinan",
+                    type: "Luxury",
+                    fuel: "Petrol",
+                    price: "$350,000",
+                    mileage: "5,000 miles",
+                    engine: "6000cc",
+                    img: "Images/Car Images/Rolls-Royce Cullinan Black Badge.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Lucid Air": {
+                    name: "Lucid Air",
+                    model: "Dream Edition",
+                    type: "Electric",
+                    fuel: "Electric",
+                    price: "$170,000",
+                    mileage: "N/A",
+                    engine: "Electric Motor",
+                    img: "Images/Car Images/Lucid.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Ford Mustang Mach-E": {
+                    name: "Ford Mustang Mach-E",
+                    model: "Mach-E",
+                    type: "Electric",
+                    fuel: "Electric",
+                    price: "$50,000",
+                    mileage: "N/A",
+                    engine: "Electric Motor",
+                    img: "Images/Car Images/Mustang Mach-E.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Toyota Prius": {
+                    name: "Toyota Prius",
+                    model: "Prime",
+                    type: "Hybrid",
+                    fuel: "Hybrid",
+                    price: "$30,000",
+                    mileage: "40,000 miles",
+                    engine: "1800cc",
+                    img: "Images/Car Images/Toyota Prius.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                },
+                "Audi R8": {
+                    name: "Audi R8",
+                    model: "V10",
+                    type: "Sports",
+                    fuel: "Petrol",
+                    price: "$150,000",
+                    mileage: "7,000 miles",
+                    engine: "5000cc",
+                    img: "Images/Car Images/Audi.jpg",
+                    imgWidth: "635px",
+                    imgHeight: "400px"
+                }
+            };
+
+            compareButton.addEventListener('click', function () {
+                const selectedCar1 = carSelection1.value;
+                const selectedCar2 = carSelection2.value;
+
+                // Clear previous car details
+                carDetailsContainer.innerHTML = '';
+
+                if (selectedCar1 && carData[selectedCar1] && selectedCar2 && carData[selectedCar2]) {
+                    // Add the selected car details
+                    const car1 = carData[selectedCar1];
+                    const car2 = carData[selectedCar2];
+
+                    const carCard1 = `
+            <div class="col-lg-6 col-md-12">
+                <div class="card">
+                    <img src="${car1.img}" alt="${car1.name}" 
+                        style="width: ${car1.imgWidth}; height: ${car1.imgHeight};" class="img-fluid rounded">
+                    <div class="container mt-4">
+                        <h3 class="text-center mb-3 bg-autoworld text-white py-2 rounded">${car1.name} Details</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <tbody>
+                                    <tr><th>Car Name</th><td>${car1.name}</td></tr>
+                                    <tr><th>Model</th><td>${car1.model}</td></tr>
+                                    <tr><th>Type</th><td>${car1.type}</td></tr>
+                                    <tr><th>Fuel Type</th><td>${car1.fuel}</td></tr>
+                                    <tr><th>Price</th><td>${car1.price}</td></tr>
+                                    <tr><th>Mileage</th><td>${car1.mileage}</td></tr>
+                                    <tr><th>Engine</th><td>${car1.engine}</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+                    const carCard2 = `
+            <div class="col-lg-6 col-md-12">
+                <div class="card">
+                    <img src="${car2.img}" alt="${car2.name}" 
+                        style="width: ${car2.imgWidth}; height: ${car2.imgHeight};" class="img-fluid rounded">
+                    <div class="container mt-4">
+                        <h3 class="text-center mb-3 bg-autoworld text-white py-2 rounded">${car2.name} Details</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <tbody>
+                                    <tr><th>Car Name</th><td>${car2.name}</td></tr>
+                                    <tr><th>Model</th><td>${car2.model}</td></tr>
+                                    <tr><th>Type</th><td>${car2.type}</td></tr>
+                                    <tr><th>Fuel Type</th><td>${car2.fuel}</td></tr>
+                                    <tr><th>Price</th><td>${car2.price}</td></tr>
+                                    <tr><th>Mileage</th><td>${car2.mileage}</td></tr>
+                                    <tr><th>Engine</th><td>${car2.engine}</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+                    // Insert the car cards into the container
+                    carDetailsContainer.innerHTML = carCard1 + carCard2;
+                } else {
+                    alert("Please select valid cars to compare!");
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

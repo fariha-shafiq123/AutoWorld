@@ -1,0 +1,60 @@
+.content-bankin-f-1 {
+    background: url('https://i.ibb.co/qkjgpMg/Usual-BG-Bank.png') no-repeat center center;
+    background-size: cover;
+    max-height: 2000px;
+}
+.custom-card {
+    border: none;
+    background-color: #46d993 !important;
+    border-radius: 4em 0 !important;
+}
+
+.custom-modal .modal-content {
+    background-color: #1f1f1f;
+    color: white;
+    border: 2px solid #46d993;
+    border-radius: 8px;
+    position: relative;
+}
+
+.custom-modal .modal-body {
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #cfcfcf;
+}
+
+/* Corner decorations */
+.custom-modal .corner-decor {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #46d993;
+}
+
+.custom-modal .corner-decor.top-left {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+}
+
+.custom-modal .corner-decor.top-right {
+    top: 0;
+    right: 0;
+    border-top-right-radius: 8px;
+}
+
+.custom-modal .corner-decor.bottom-left {
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 8px;
+}
+
+.custom-modal .corner-decor.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 8px;
+}
+
+.card-img-top {
+    height: 400px;
+}

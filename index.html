@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoWorld</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/favicon/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Root CSS -->
+    <link rel="stylesheet" href="CSS/root.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Internal Style -->
+    <style>
+        /* ___ O W L - C A R O U S E L ___ */
+
+        .features-car-section {
+            padding: 30px 0;
+            overflow: hidden;
+        }
+
+        .owl-carousel .item {
+            transition: transform 0.5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .custom-card {
+            position: relative;
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+        }
+
+        .custom-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .custom-card-overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .owl-center .custom-card {
+            transform: scale(1.1);
+            transition: transform 0.4s ease-in-out;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+
+
+        .owl-item {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .owl-item.center {
+            transform: scale(1);
+            z-index: 2;
+            opacity: 1;
+        }
+
+        .owl-item:not(.center) {
+            transform: scale(0.8);
+            z-index: 1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark navbar-expand-lg transparent fixed-top">
+            <a class="navbar-brand m-auto px-5" href="#">
+                <span>
+                    <img src="Images/favicon/logo-1.png" alt="Auto-World" class="" height="50px" width="70px">
+                </span>
+                Auto World
+            </a>
+
+            <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end bg-autoworld-sec text-light" id="navbarNav" tabindex="-1"
+                aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto px-5">
+                        <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about-us.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="search-car.html" class="nav-link">Cars</a></li>
+                    </ul>
+
+                    <a href="Sign-up.html" class="btn btn-autoworld mx-4"><i class="fa fa-user-circle mx-2"></i>Sign
+                        up</a>
+                    <a href="Sign-in.html" class="btn btn-autoworld mx-4"><span class="sm-btn-i mx-2"><i
+                                class="fa-solid fa-right-to-bracket"></i></span>Login</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+
+    <!-- Content Section -->
+
+    <section class="content-section-f-1 d-flex align-items-center text-light" id="Home">
+        <div class="container text-center" style="margin-top: 260px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-content">
+                        <h3 class="fw-bold"><span class="text-autoworld">Auto World </span>- Your Trusted Car Showroom
+                        </h3>
+                        <h1 class="display-3 fw-bold text-white">
+                            <span class="text-autoworld">AutoWorld</span> - Modern Car Dealer Best <span
+                                class="text-autoworld">Prices</span>
+                        </h1>
+                        <p class="lead text-white">Discover a wide range of cars to suit your style and budget.
+                            Performance, safety, and design all in one place.</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <a href="search-car.html"
+                                    class=" btn btn-autoworld-dec text-decoration-none btn-lg p-3 d-flex align-items-center justify-content-center gap-2">
+                                    <span class="position-relative">
+                                        <i class="fa-solid fa-eye"></i>
+                                        See Cars
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Features Section -->
+            <div class="features-section container py-5 mt-5">
+                <div class="row text-center text-white">
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-desktop fa-2x text-autoworld"></i>
+                        <h5 class="fw-bold">Online Support</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-chart-line fa-2x text-autoworld"></i>
+                        <h5 class="fw-bold">To Most SEO Friendly</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-tv fa-2x text-autoworld"></i>
+                        <h5 class="fw-bold">Availble Website</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa-solid fa-truck-fast fa-2x text-autoworld"></i>
+                        <h5 class="fw-bold">Fast Support</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="scrolling-text-wrapper">
+        <div class="scrolling-text">
+            <div class="marquee-text">
+                <img decoding="async" src="Images/favicon/logo-1.png" height="50px" width="70px" alt="slider-image">
+                <h2 class="d-inline">GET 30% OFFER ON TOYOTA CAR</h2> <img decoding="async"
+                    src="Images/favicon/logo-1.png" height="50px" width="70px" alt="slider-image">
+                <h2 class="d-inline">GET 24% OFFER ON BMW LATEST MODEL</h2> <img decoding="async"
+                    src="Images/favicon/logo-1.png" height="50px" width="70px" alt="slider-image">
+                <h2 class="d-inline">GET 45% OFFER ON FERRARI LAMBORGINI</h2> <img decoding="async"
+                    src="Images/favicon/logo-1.png" height="50px" width="70px" alt="slider-image">
+                <h2 class="d-inline"> GET 15% OFFER ON NISSAN CAR</h2>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Search Your Dream Car -->
+    <section class="search-your-dream-car mt-5">
+        <div class="text-center">
+            <h2 class="display-5 fw-bold">Search Your <span class="text-autoworld">Dream</span> Car</h2>
+            <p class="lead">There are 10+ Brands</p>
+        </div>
+        <div class="container p-5 text-center">
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/Porsche.png" class="card-img-top card-img-own-css" alt="Porsche"
+                                height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">Porsche</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/Mercedes.png" class="card-img-top card-img-own-css"
+                                alt="Mercedes" height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">Mercedes</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/BMW.png" class="card-img-top card-img-own-css" alt="BMW"
+                                height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">BMW</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/Audi.png" class="card-img-top card-img-own-css" alt="Audi"
+                                height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">Audi</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/ferreri.png" class="card-img-top card-img-own-css" alt="Ferrari"
+                                height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">Ferrari</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/Lamborghini.png" class="card-img-top card-img-own-css"
+                                alt="Lamborghini" height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">Lamborghini</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/Tesla.png" class="card-img-top card-img-own-css" alt="Tesla"
+                                height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">Tesla</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/Toyota.png" class="card-img-top card-img-own-css" alt="Toyota"
+                                height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">Toyota</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/Nissan.png" class="card-img-top card-img-own-css" alt="Nissan"
+                                height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">Nissan</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/Koenigsegg.png" class="card-img-top card-img-own-css"
+                                alt="Koenigsegg" height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">Koenigsegg</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/McLaren.png" class="card-img-top card-img-own-css" alt="McLaren"
+                                height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">McLaren</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <a href="search-car.html" class="text-decoration-none">
+                        <div class="card border mx-auto mt-4 car-own-css" style="width: 10rem; height: 8rem;">
+                            <img src="Images/Car logos/Bugatti.png" class="card-img-top card-img-own-css" alt="Bugatti"
+                                height="80px" width="50px">
+                            <div class="card-body">
+                                <h5 class="card-title">Bugatti</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Why you choose us -->
+    <section class="why-choose-us text-light py-5">
+        <div class=" container">
+            <h2 class="text-uppercase">Why choose us</h2>
+            <p class="lead">This is why choose us</p>
+            <hr>
+
+            <div class="row text-center">
+                <div class="col-12 col-md-4 mt-5">
+                    <i class="fas fa-hand-holding-usd fa-5x mb-3"></i>
+                    <h3>FINANCING MADE EASY</h3>
+                    <p class="lead">Financing made simple with quick approvals, flexible terms, and a smooth
+                        process—turning your dreams into reality.</p>
+                </div>
+                <div class="col-12 col-md-4 mt-5">
+                    <i class="fas fa-layer-group fa-5x  mb-3"></i>
+                    <h3>WIDE RANGE OF BRANDS</h3>
+                    <p class="lead">Explore a wide range of brands offering diverse styles, top performance, and
+                        unmatched quality for every need.</p>
+                </div>
+                <div class="col-12 col-md-4 mt-5">
+                    <i class="fas fa-shield-alt fa-5x  mb-3"></i>
+                    <h3>TRUSTED BY THOUSANDS</h3>
+                    <p class="lead">Trusted by thousands for reliability, excellence, and a commitment to delivering the
+                        best experiences every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars -->
+
+    <section class="features-car-section mt-5">
+        <div class="container">
+            <h2 class="text-uppercase">Featured Cars</h2>
+            <p class="lead">Here are some Featured Cars</p>
+            <hr>
+            <!-- Owl Carousel -->
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="custom-card">
+                        <img src="Images/Car Images/Porsche-911.jpg" alt="Car Image">
+                        <div class="custom-card-overlay">
+                            <h5>Porsche 911</h5>
+                            <p class="mb-0">$105,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="custom-card">
+                        <img src="Images/Car Images/tesla-model-s.jpg" alt="Car Image">
+                        <div class="custom-card-overlay">
+                            <h5>Tesla Model S</h5>
+                            <p class="mb-0">$115,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="custom-card">
+                        <img src="Images/Car Images/BMW Series 3.jpg" alt="Car Image">
+                        <div class="custom-card-overlay">
+                            <h5>BMW 3 Series</h5>
+                            <p class="mb-0">$42,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="custom-card">
+                        <img src="Images/Car Images/Audi-A8.png" alt="Car Image">
+                        <div class="custom-card-overlay">
+                            <h5>Audi A8</h5>
+                            <p class="mb-0">$87,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="custom-card">
+                        <img src="Images/Car Images/Mercedes-Benz S-Class.jpg" alt="Car Image">
+                        <div class="custom-card-overlay">
+                            <h5>Mercedes-Benz S-Class</h5>
+                            <p class="mb-0">$111,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="custom-card">
+                        <img src="Images/Car Images/Lexus-RX-350.jpg" alt="Car Image">
+                        <div class="custom-card-overlay">
+                            <h5>Lexus RX 350</h5>
+                            <p class="mb-0">$50,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compare Cars Section -->
+    <section class="compare-car-section">
+        <div class="usual-bg">
+            <div class="container text-lg-start text-sm-center">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-12 mt-5">
+                        <div class="text-white mb-4">
+                            <span class="text-with-line">Comparison</span>
+                        </div>
+                        <h2 class="fw-bold display-4 text-light">Compair <span class="text-autoworld">Cars</span>
+                        </h2>
+                        <p class="lead text-light mt-3">
+                            Compair cars is a feature that allows you to compare the features of different cars. This
+                            feature is useful for you.
+                        </p>
+                        <a href="compare-car.html" class="btn btn-autoworld-dec
+                            btn-autoworld-dec-pt btn-autoworld-dec-i btn-lg p-3 btn-lg w-50"><span
+                                class="position-relative">Compare </span> <i class="fa-solid fa-car-side"></i></a>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-center mb-5">
+                        <img src="Images/Compair-Car.png" alt="Feedback" class="img-fluid mt-5 ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Us -->
+    <section class="text-dark">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Image Section -->
+                    <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                        <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="position-absolute img-fluid w-100 h-100 rounded"
+                                src="Images/Worker-repairing-car.jpg" style="object-fit: cover;"
+                                alt="Worker repairing a car">
+                            <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5 rounded"
+                                style="background: #46d99259;">
+                                <h1 class="display-4 text-white mb-0">10 <span class="fs-4">Years</span></h1>
+                                <h4 class="text-white">Experience</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text Content Section -->
+                    <div class="col-lg-6">
+                        <h6 class="text-autoworld text-uppercase">// About Us //</h6>
+                        <h1 class="mb-4 text-autoworld-sec">
+                            <span class="text-autoworld">Autoworld</span> Is The Best & Suitable Place For Your Cars and
+                            Bike Care
+                        </h1>
+                        <p class="mb-4">
+                            At AutoWorld, we're passionate about cars and customer satisfaction. Discover top brands,
+                            expert guidance, and seamless service. We’re here to make your car-buying journey simple,
+                            enjoyable, and stress-free.
+                        </p>
+                        <!-- Features Section -->
+                        <div class="row g-4 mb-3 pb-3">
+                            <!-- Feature 01 -->
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="d-flex">
+                                    <div class="bg-light d-flex align-items-center justify-content-center mt-1"
+                                        style="width: 45px; height: 45px;">
+                                        <span class="fw-bold text-autoworld-an-50">01</span>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="text-autoworld-sec">Professional & Expert</h6>
+                                        <span>Skilled professionals ensuring top-notch service and expertise.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Feature 02 -->
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="d-flex">
+                                    <div class="bg-light d-flex align-items-center justify-content-center mt-1"
+                                        style="width: 45px; height: 45px;">
+                                        <span class="fw-bold text-autoworld-an-50">02</span>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="text-autoworld-sec">Quality Servicing Center</h6>
+                                        <span>Reliable servicing center offering high-quality maintenance and
+                                            repairs.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Feature 03 -->
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <div class="bg-light d-flex align-items-center justify-content-center mt-1"
+                                        style="width: 45px; height: 45px;">
+                                        <span class="fw-bold text-autoworld-an-50">03</span>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6 class="text-autoworld-sec">Awards Winning Workers</h6>
+                                        <span>Dedicated, award-winning team delivering exceptional service and
+                                            expertise.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Read More Button -->
+                        <span class="btn-autoworld-dec-pt">
+                            <a href="about-us.html" class="btn btn-autoworld-dec p-3 w-10 btn-autoworld-dec-i">
+                                <span class="position-relative">
+                                    Read More
+                                    <i class="fa fa-arrow-right ms-2"></i>
+                                </span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback -->
+
+    <section class="give-us-feedback mt-5">
+        <div class="feedback-bg usual-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-12 mt-5">
+                        <div class="text-white mb-4">
+                            <span class="text-with-line">Feedback</span>
+                        </div>
+                        <h2 class="fw-bold display-4 text-light">Give us <span class="text-autoworld">Feedback</span>
+                        </h2>
+                        <p class="lead text-light mt-3">
+                            Your feedback is invaluable to us at AutoWorld. Share your thoughts to help improve our car
+                            showroom experience and services.
+                        </p>
+                        <a href="feedback.html" class="btn btn-autoworld-dec
+                        btn-autoworld-dec-pt btn-autoworld-dec-i p-3 w-10"><span class="position-relative">Give us
+                                Feedback <i class="fa-solid fa-thumbs-up ms-1"></i> </span></a>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <img src="Images/index-feedback-bg.png" alt="Feedback" class="img-fluid mt-4 mt-md-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- What our customer says -->
+    <section class="what-ur-customer-says bg-autoworld-an text-autoworld-sec text-light py-5 mt-5">
+        <div class="container">
+            <h2 class="text-uppercase">What Our Customer Says</h2>
+            <p class="lead">After buying & Servicing Our Customers Says</p>
+            <hr>
+
+            <div class="row text-center">
+                <div class="col-12 col-md-4 mt-5">
+                    <i class="fa fa-thumbs-up fa-5x mb-3 text-autoworld"></i>
+                    <h3>BEST QUALITY ITEMS USED</h3>
+                    <p class="lead">We use only the best quality items, ensuring durability, performance, and
+                        satisfaction for every customer.</p>
+                </div>
+                <div class="col-12 col-md-4 mt-5">
+                    <i class="fas fa-dollar-sign fa-5x  mb-3 text-autoworld"></i>
+                    <h3>LESS PRICE</h3>
+                    <p class="lead">Get the best deals at unbeatable prices, offering top-quality products without
+                        compromising your budget.</p>
+                </div>
+                <div class="col-12 col-md-4 mt-5">
+                    <i class="fas fa-smile-beam fa-5x  mb-3 text-autoworld"></i>
+                    <h3 class="text-uppercase">I'M Satisfied</h3>
+                    <p class="lead">I'm satisfied with the exceptional service and quality provided—everything exceeded
+                        my expectations, truly amazing!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell Your Car -->
+    <section class="sell-your-car mt-5 mb-5 text-light">
+        <div class="container">
+            <div class="row">
+                <div class="sell-your-car-f-col">
+                    <h2 class="display-4 fw-bold font">Sell Your <span class="text-autoworld">Car!</span></h2>
+                    <div class="sell-your-car-p-text">
+                        <p class=" "><span class="text-autoworld">Confusion ,</span>Sell your <span
+                                class="text-autoworld">Car </span> to the best Owner that will keep your car</p>
+                    </div>
+
+                    <button type="button"
+                        class="btn btn-autoworld-dec btn-autoworld-dec-i btn-autoworld-dec-pt p-3 w-10"
+                        data-bs-toggle="modal" data-bs-target="#customModal">
+                        <span class="position-relative">
+                            Sell Your Car
+                            <i class="fa-solid fa-car-side ms-1"></i>
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Our Top 3 Worker -->
+    <section class="our-top-3-worker mt-5">
+
+        <div class="col-lg-12 text-center text-danger mb-5 text-uppercase">
+            <h5 class="text-autoworld">// Our Workers //</h5>
+        </div>
+        <div class="col-lg-12 text-center mb-5">
+            <h2 class="display-5 fw-bold">Our Top 4 Expert Technicians</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="Images/person-1.jpg" alt="Jhon Doe" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Jhon Doe</h4>
+                            <p class="card-text">Engine Mechanic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="Images/person-2.jpg" alt="Mark Stan" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Mark Stan</h4>
+                            <p class="card-text">Engine Mechanic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="Images/person-3.jpg" alt="Micheal Jhon" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Micheal Jhon</h4>
+                            <p class="card-text">Engine Mechanic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="Images/person-4.jpg" alt="Luis Miguel" />
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Luis Miguel</h4>
+                            <p class="card-text">Engine Mechanic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Our Project -->
+    <section class="our-projects bg-autoworld-an text-autoworld-sec mt-5">
+        <div class="counter-container">
+            <div class="container-fluid my-5 py-5">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-3 col-sm-6 text-center">
+                            <i class="fa fa-check fa-2x text-white mb-3 text-autoworld"></i>
+                            <div class="counter">
+                                <h1 data-target="1234">0</h1>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 text-center">
+                            <i class="fa fa-users-cog fa-2x text-white mb-3 text-autoworld"></i>
+                            <div class="counter">
+                                <h1 data-target="1234">0</h1>
+                                <p>Expert Technicians</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 text-center">
+                            <i class="fa fa-users fa-2x text-white mb-3 text-autoworld"></i>
+                            <div class="counter">
+                                <h1 data-target="1234">0</h1>
+                                <p>Satisfied Clients</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 text-center">
+                            <i class="fa fa-car fa-2x text-white mb-3 text-autoworld"></i>
+                            <div class="counter">
+                                <h1 data-target="1234">0</h1>
+                                <p>Complete Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-center text-lg-start bg-autoworld-sec text-light">
+        <!-- Date & Time Section -->
+        <section>
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 d-flex justify-content-between">
+                        <p id="dateTime" class="mt-3 ms-2"></p>
+                        <p id="geoLocation" class="mt-3 ms-2"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            <section>
+                <div class="container text-center text-md-start mt-">
+                    <div class="row footer-row-custom">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <img src="Images/favicon/logo-1.png" alt="" height="40px" width="50px" class="footer-logo">
+                                AutoWorld
+                            </h6>
+                            <p>
+                                Discover a wide range of cars to suit your style and budget. Performance, safety, and design
+                                all in one place.
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Cars
+                        </h6>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Audi</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Toyota</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Tesla</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">BMW</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p><a href="feedback.html" class="text-reset footer-a-txt-dec-none-class">Feedback</a></p>
+                        <p><a href="compare-car.html" class="text-reset footer-a-txt-dec-none-class">Compare</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Search Car</a></p>
+                        <p><a href="Sign-up.html" class="text-reset footer-a-txt-dec-none-class">Accounts</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <span>Get connected with us on social networks:</span>
+            <div>
+                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            AutoWorld © 2025 Copyright:
+            <a class="text-reset fw-bold" href="index.html">autoworld.com</a>
+        </div>
+    </footer>
+    <div class="gtranslate_wrapper"></div>
+
+
+    <section>
+        <!-- M O D A L  -->
+        <div class="modal modal-lg fade custom-modal text-autoworld" id="customModal" tabindex="-1"
+            aria-labelledby="customModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Green corner decors -->
+                    <div class="corner-decor top-left"></div>
+                    <div class="corner-decor top-right"></div>
+                    <div class="corner-decor bottom-left"></div>
+                    <div class="corner-decor bottom-right"></div>
+
+                    <div class="modal-header">
+                        <h5 class="modal-title text-autoworld" id="customModalLabel">Sell You Car <i
+                                class="fa fa-car"></i> </h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <section>
+                            <form>
+                                <div class="container">
+                                    <!-- Section Title -->
+                                    <p class="section-title"><strong>Enter Your Info</strong></p>
+
+                                    <!-- Personal Info Section -->
+                                    <section class="personal-info">
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="fullName">Full Name</label>
+                                                <input type="text" id="fullName"
+                                                    class="form-control-custom form-control"
+                                                    placeholder="Enter Your Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="phone">Phone</label>
+                                                <input type="number" id="phone" class="form-control-custom form-control"
+                                                    placeholder="Enter Your Phone">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="location">Location</label>
+                                                <input type="text" id="location"
+                                                    class="form-control-custom form-control"
+                                                    placeholder="Enter Your Location">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="email">Email (Optional)</label>
+                                                <input type="email" id="email" class="form-control-custom form-control"
+                                                    placeholder="Enter Your Email">
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <!-- Car Info Section -->
+                                    <p class="section-title mt-4"><strong>Enter Your Car Info</strong></p>
+                                    <section class="your-car-info">
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="carBrand1">Car Brand Name</label>
+                                                <input type="text" id="carBrand1"
+                                                    class="form-control-custom form-control"
+                                                    placeholder="Enter Car Brand Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="carModel">Car Model</label>
+                                                <input type="text" id="carModel"
+                                                    class="form-control-custom form-control"
+                                                    placeholder="Enter Car Model">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="carYear">Year of Manufacture</label>
+                                                <input type="text" id="carYear" class="form-control-custom form-control"
+                                                    placeholder="Enter Year of Manufacture">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="carColor">Car Color</label>
+                                                <input type="text" id="carColor"
+                                                    class="form-control-custom form-control"
+                                                    placeholder="Enter Car Color">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-12">
+                                                <label for="carMessage">Something About Your Car</label>
+                                                <textarea id="carMessage" rows="5"
+                                                    class="form-control-custom form-control"
+                                                    placeholder="Enter Details About Your Car"></textarea>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </form>
+                        </section>
+
+                    </div>
+
+                    <div class="modal-footer p-4 justify-content-center">
+                        <button type="button" class="btn btn-autoworld w-10" data-bs-dismiss="modal"
+                            onclick="submit()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- _______________________ -->
+    <script>
+        window.gtranslateSettings = {
+            default_language: "en",
+            languages: [
+                "en",
+                "it",
+                "es",
+                "fr",
+                "de",
+                "nl",
+                "da",
+                "pt",
+                "ar",
+                "zh-CN",
+                "ms",
+                "cs",
+                "sk",
+                "hu",
+                "bg",
+                "pl",
+                "ro",
+                "hr",
+                "sl",
+                "sr",
+                "bs",
+            ],
+            wrapper_selector: ".gtranslate_wrapper",
+        };
+
+        // This is for footer
+
+    function showDateTime() {
+        var now = new Date();
+        var dateTimeElement = document.getElementById('dateTime');
+        dateTimeElement.textContent = 'Date & Time: ' + now.toLocaleString();
+    }
+    setInterval(showDateTime, 1000); 
+
+    function showGeolocation() {
+        var geoLocationElement = document.getElementById('geoLocation');
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                geoLocationElement.textContent = 'Location: Latitude ' + latitude.toFixed(2) + ', Longitude ' + longitude.toFixed(2);
+            }, function () {
+                geoLocationElement.textContent = 'Location: Unable to retrieve location.';
+            });
+        } else {
+            geoLocationElement.textContent = 'Location: Geolocation not supported.';
+        }
+    }
+    showGeolocation();
+    </script>
+
+    <!-- _______________________ -->
+
+    <script src="JS/script.js"></script>
+
+    <!-- Include jQuery, Owl Carousel, and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js"></script>
+    <!-- Initialize Owl Carousel -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true, /* Infinite loop */
+                margin: 15, /* Spacing between cards */
+                center: true, /* Center the active card */
+                autoplay: true, /* Enable autoplay */
+                autoplayTimeout: 3000, /* 3-second interval */
+                autoplayHoverPause: true, /* Pause on hover */
+                responsive: {
+                    0: { items: 1 }, /* 1 card on mobile screens */
+                    768: { items: 2 }, /* 2 cards on medium screens */
+                    992: { items: 3 } /* 3 cards on large screens */
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

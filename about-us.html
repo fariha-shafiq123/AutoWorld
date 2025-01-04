@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-US | Autoworld</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/favicon/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/about-us.css">
+    <!-- Root CSS -->
+    <link rel="stylesheet" href="CSS/root.css">
+    <link rel="stylesheet" href="CSS/root.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <style>
+        .feedback {
+            flex-grow: 1;
+            /* Make the feedback section grow to fill available space */
+            min-height: 100px;
+            /* Ensure feedback has a minimum height */
+            overflow: hidden;
+            /* Hide overflowing text if any */
+        }
+
+        .google-logo {
+            max-height: 30px;
+            width: auto;
+        }
+
+        .author {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .owl-carousel .item {
+            transition: transform 0.5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .custom-card {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .custom-card .stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+
+        .custom-card .feedback {
+            font-size: 1rem;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .custom-card .author {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .custom-card .author small {
+            display: block;
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+
+        .google-logo {
+            height: 25px;
+            margin-top: 10px;
+        }
+
+        .owl-center .custom-card {
+            transition: transform 0.4s ease-in-out;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+
+
+        .owl-item {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .owl-item.center {
+            border: 1px solid #46d993;
+            border-radius: 5px;
+            z-index: 2;
+            opacity: 1;
+        }
+
+        .owl-item:not(.center) {
+            transform: scale(0.8);
+            z-index: 1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-light navbar-expand-lg transparent fixed-top">
+            <a class="navbar-brand m-auto px-5" href="index.html">
+                <span>
+                    <img src="Images/favicon/logo-1.png" alt="Auto-World" class="" height="50px" width="70px">
+                </span>
+                Auto World
+            </a>
+
+            <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end bg-autoworld-sec text-light" id="navbarNav" tabindex="-1"
+                aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto px-5">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about-us.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="search-car.html" class="nav-link">Cars</a></li>
+                    </ul>
+
+                    <a href="Sign-up.html" class="btn btn-autoworld mx-4"><i class="fa fa-user-circle mx-2"></i>Sign
+                        up</a>
+                    <a href="Sign-in.html" class="btn btn-autoworld mx-4"><span class="sm-btn-i mx-2"><i
+                                class="fa-solid fa-right-to-bracket"></i></span>Login</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- About US top Section -->
+        <section class="about-us-top-sec top-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Image Section -->
+                    <div class="col-lg-6 col-md-12 text-center">
+                        <img src="Images/About-US.png" alt="About-Us-Img" class="img-fluid">
+                    </div>
+                    <!-- Text Section -->
+                    <div class="col-lg-6 col-md-12 text-center text-lg-start">
+                        <h1 class="display-1">
+                            <span class="text-autoworld-g-50 fw-bolder">About</span>
+                            <span class="text-autoworld fw-bold">US</span>
+                        </h1>
+                        <p class="lead mt-4">
+                            AutoWorld is your trusted partner in finding the perfect car. We provide a wide selection of
+                            vehicles, exceptional customer service, and expert guidance to make your car-buying journey
+                            effortless. Our dedication to innovation, quality, and satisfaction ensures every customer
+                            drives away with confidence, knowing they made the right choice.
+                        </p>
+                        <a href="#About "
+                            class="btn btn-autoworld-dec btn-autoworld-dec-pt btn-autoworld-dec-i p-3 w-10 btn-lg">
+                            <span class="position-relative">More <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Welcome Section -->
+        <section class="welcome-section mt-5 container">
+            <h2 class="fw-bold text-center display-5">Welcome to <span class="text-autoworld">AutoWorld</span></h2>
+            <p class="lead text-center mt-3">At AutoWorld, we are passionate about connecting customers with their dream
+                cars. Our mission is to provide a seamless car-buying experience through a wide range of high-quality
+                vehicles, exceptional service, and expert guidance. With a commitment to trust and innovation, AutoWorld
+                ensures satisfaction and excellence in every step of your journey.</p>
+            <p class="text-autoworld text-center">( Since - 2000 )</p>
+        </section>
+
+        <!-- Why Choose us on About US page -->
+
+        <section class="why-choose-us-about-us mt-5 usual-bg" id="About">
+            <div class="container">
+                <hr class="text-white mb-5">
+                <h2 class="text-autoworld text-center display-6 fw-bold text-white">Your Trusted Showroom</h2>
+                <h2 class="display-5 fw-bold text-center text-white mt-4">Why Choose <span
+                        class="text-autoworld">AutoWorld</span></h2>
+
+                <div class="row text-center justify-content-center" style="min-height: 100vh;">
+                    <div class="col-12 col-md-4 mt-5">
+                        <div class="card card-about bg-autoworld-an autoworld-card card-body"
+                            style="transition: .25s; height: 400px;">
+                            <i class="fas fa-hand-holding-usd fa-5x mb-3 text-autoworld"></i>
+                            <h3>FINANCING MADE EASY</h3>
+                            <p class="lead">Discover easy and flexible financing options tailored to your needs. Get the
+                                car you want, without the hassle.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mt-5">
+                        <div class="card card-about bg-autoworld-an autoworld-card card-body"
+                            style="transition: .25s; height: 400px;">
+                            <i class="fas fa-layer-group fa-5x mb-3 text-autoworld"></i>
+                            <h3>WIDE RANGE OF BRANDS</h3>
+                            <p class="lead">Choose from an extensive selection of top-quality car brands. We bring the
+                                best options right to your fingertips.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mt-5">
+                        <div class="card card-about bg-autoworld-an autoworld-card card-body"
+                            style="transition: .25s; height: 400px;">
+                            <i class="fas fa-shield-alt fa-5x mb-3 text-autoworld"></i>
+                            <h3>TRUSTED BY THOUSANDS</h3>
+                            <p class="lead">Join thousands of satisfied customers who trust us for quality service and
+                                unbeatable value.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- About US - Counter Animaiton -->
+
+            <div class="container">
+                <hr class="mt-5" style="color: #fff;">
+            </div>
+            <section class="our-projects text-autoworld-sec">
+                <div class="counter-container">
+                    <div class="container-fluid my-5 py-5">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-md-3 col-sm-6 text-center">
+                                    <i class="fa fa-car fa-2x text-white mb-3 text-autoworld"></i>
+                                    <div class="counter">
+                                        <h1 data-target="1234" class="text-white">0</h1>
+                                        <p class="text-white">Car Avalible</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 text-center">
+                                    <i class="fa fa-dollar fa-2x text-white mb-3 text-autoworld"></i>
+                                    <div class="counter">
+                                        <h1 data-target="1234" class="text-white">0</h1>
+                                        <p class="text-white">Car Sold</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 text-center">
+                                    <i class="fa fa-car fa-2x text-white mb-3 text-autoworld"></i>
+                                    <div class="counter">
+                                        <h1 data-target="1234" class="text-white">0</h1>
+                                        <p class="text-white">used Cards</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 text-center">
+                                    <i class="fa fa-thumbs-up fa-2x text-white mb-3 text-autoworld"></i>
+                                    <div class="counter">
+                                        <h1 data-target="1234" class="text-white">0</h1>
+                                        <p class="text-white">Customer Satisfaction</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mb-5">
+                            <hr style="color: #fff;">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- How we Work -->
+        <section class="how-we-work bg-autoworld-an mt-5">
+            <div class="container">
+                <hr class="text-white mb-5">
+                <h2>How We Work</h2>
+                <p>Here is some brief information and a chart that tells how we work</p>
+                <hr>
+                <div class="text-center mt-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <i class="fa fa-location-dot fa-2x mb-3 text-autoworld p-3 custom-icon-round-bg"></i>
+                            <h4 class="fw-bold">Select Your Service</h4>
+                            <p class="lead">Car servicing involves routine checks and upkeep to maintain your vehicle's
+                                performance.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <i class="fa fa-phone fa-2x mb-3 text-autoworld p-3 custom-icon-round-bg"></i>
+                            <h4 class="fw-bold">Get in Touch</h4>
+                            <p class="lead">Regular maintenance ensures your car runs efficiently and stays in good
+                                condition.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <i class="fa fa-credit-card fa-2x mb-3 text-autoworld p-3 custom-icon-round-bg"></i>
+                            <h4 class="fw-bold">Make Your Payment</h4>
+                            <p class="lead">Scheduled servicing helps prevent issues and keeps your vehicle reliable and
+                                safe.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <i class="fa fa-car-side fa-2x mb-3 text-autoworld p-3 custom-icon-round-bg"></i>
+                            <h4 class="fw-bold">Collect Your Vehicle</h4>
+                            <p class="lead">Proper upkeep ensures your car remains efficient, safe, and ready for use.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+
+        <!-- Our Custom Reveiw -->
+        <section class="our-customer-rev py-5 mt-5">
+            <div class="container">
+                <h2 class="display-6 fw-bold">What our Customer Says:</h2>
+                <p class="lead">These are the review our customer is saying
+                    <hr>
+                </p>
+                <div class="owl-carousel owl-theme">
+                    <!-- Card 1 -->
+                    <div class="item">
+                        <div class="card border-0 shadow-sm p-4">
+                            <div class="feedback mt-3">Great services! Drivco-Agency customer feedback is an invaluable
+                                source of insight for improving operations.</div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                alt="Google Logo" class="google-logo mt-3" style="height: 30px;">
+                            <div class="author mt-3">
+                                <strong>John Abraham</strong>
+                                <br>
+                                <small>Software Engineer</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="item">
+                        <div class="card border-0 shadow-sm p-4">
+                            <div class="feedback mt-3">Excellent service and support! I found my dream car easily thanks
+                                to their team.</div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                alt="Google Logo" class="google-logo mt-3" style="height: 30px;">
+                            <div class="author mt-3">
+                                <strong>Emily Carter</strong>
+                                <br>
+                                <small>Digital Marketer</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="item">
+                        <div class="card border-0 shadow-sm p-4">
+                            <div class="feedback mt-3">Helpful staff and smooth process! Some cars were outside my
+                                budget, but the service was fantastic.</div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                alt="Google Logo" class="google-logo mt-3" style="height: 30px;">
+                            <div class="author mt-3">
+                                <strong>Michael Johnson</strong>
+                                <br>
+                                <small>Entrepreneur</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="item">
+                        <div class="card border-0 shadow-sm p-4">
+                            <div class="feedback mt-3">I was amazed by the quality and professionalism! Highly recommend
+                                for anyone looking for reliable car deals.</div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                alt="Google Logo" class="google-logo mt-3" style="height: 30px;">
+                            <div class="author mt-3">
+                                <strong>Sophia Lee</strong>
+                                <br>
+                                <small>Graphic Designer</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="item">
+                        <div class="card border-0 shadow-sm p-4">
+                            <div class="feedback mt-3">Outstanding team and service! I was able to secure my car with no
+                                hassle at all.</div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                                alt="Google Logo" class="google-logo mt-3" style="height: 30px;">
+                            <div class="author mt-3">
+                                <strong>Oliver Davis</strong>
+                                <br>
+                                <small>Business Consultant</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="text-center text-lg-start bg-autoworld-sec text-light">
+        <!-- Date & Time Section -->
+        <section>
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 d-flex justify-content-between">
+                        <p id="dateTime" class="mt-3 ms-2"></p>
+                        <p id="geoLocation" class="mt-3 ms-2"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container text-center text-md-start mt-">
+                <div class="row footer-row-custom">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="Images/favicon/logo-1.png" alt="" height="40px" width="50px" class="footer-logo">
+                            AutoWorld
+                        </h6>
+                        <p>
+                            Discover a wide range of cars to suit your style and budget. Performance, safety, and design
+                            all in one place.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Cars
+                        </h6>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Audi</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Toyota</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Tesla</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">BMW</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p><a href="feedback.html" class="text-reset footer-a-txt-dec-none-class">Feedback</a></p>
+                        <p><a href="compare-car.html" class="text-reset footer-a-txt-dec-none-class">Compare</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Search Car</a></p>
+                        <p><a href="Sign-up.html" class="text-reset footer-a-txt-dec-none-class">Accounts</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <span>Get connected with us on social networks:</span>
+            <div>
+                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            AutoWorld © 2025 Copyright:
+            <a class="text-reset fw-bold" href="index.html">autoworld.com</a>
+        </div>
+    </footer>
+    <div class="gtranslate_wrapper"></div>
+
+    <script>
+        window.gtranslateSettings = {
+            default_language: "en",
+            languages: [
+                "en",
+                "it",
+                "es",
+                "fr",
+                "de",
+                "nl",
+                "da",
+                "pt",
+                "ar",
+                "zh-CN",
+                "ms",
+                "cs",
+                "sk",
+                "hu",
+                "bg",
+                "pl",
+                "ro",
+                "hr",
+                "sl",
+                "sr",
+                "bs",
+            ],
+            wrapper_selector: ".gtranslate_wrapper",
+        };
+
+        // This is for footer
+
+        function showDateTime() {
+            var now = new Date();
+            var dateTimeElement = document.getElementById('dateTime');
+            dateTimeElement.textContent = 'Date & Time: ' + now.toLocaleString();
+        }
+        setInterval(showDateTime, 1000);
+
+        function showGeolocation() {
+            var geoLocationElement = document.getElementById('geoLocation');
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var latitude = position.coords.latitude;
+                    var longitude = position.coords.longitude;
+                    geoLocationElement.textContent = 'Location: Latitude ' + latitude.toFixed(2) + ', Longitude ' + longitude.toFixed(2);
+                }, function () {
+                    geoLocationElement.textContent = 'Location: Unable to retrieve location.';
+                });
+            } else {
+                geoLocationElement.textContent = 'Location: Geolocation not supported.';
+            }
+        }
+        showGeolocation();
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js"></script>
+
+    <!-- Script CDN's -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="JS/Sign-in - Sign-up.js"></script>
+    <script src="JS/about-us.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Retrieve feedback data from local storage
+            const feedbackList = JSON.parse(localStorage.getItem('feedbackList')) || [];
+
+            // Check if feedbackList is not empty
+            if (feedbackList.length > 0) {
+                const owlCarousel = document.querySelector('.owl-carousel');
+
+                // Loop through feedback and create carousel items
+                feedbackList.forEach(feedback => {
+                    const item = document.createElement('div');
+                    item.className = 'item';
+
+                    // Card structure
+                    item.innerHTML = `
+                        <div class="card border-0 shadow-sm p-4">
+                            <div class="feedback mt-3">${feedback.message}</div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Custom Logo" class="custom-logo mt-3" style="height: 30px;">
+                            <div class="author mt-3">
+                                <strong>${feedback.username}</strong>
+                                <br>
+                                <small>${feedback.email}</small>
+                            </div>
+                        </div>
+                    `;
+
+
+                    // Append to carousel
+                    owlCarousel.appendChild(item);
+                });
+            }
+
+            // Initialize Owl Carousel
+            $(document).ready(function () {
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 15,
+                    center: true,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: { items: 1 },
+                        768: { items: 2 },
+                        992: { items: 3 }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

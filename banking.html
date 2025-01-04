@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking | AutoWorld</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/favicon/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/banking.css">
+    <!-- Root CSS -->
+    <link rel="stylesheet" href="CSS/root.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark navbar-expand-lg transparent fixed-top">
+            <a class="navbar-brand m-auto px-5" href="index.html">
+                <span>
+                    <img src="Images/favicon/logo-1.png" alt="Auto-World" class="" height="50px" width="70px">
+                </span>
+                Auto World
+            </a>
+
+            <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end bg-autoworld-sec text-light" id="navbarNav" tabindex="-1"
+                aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto px-5">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about-us.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="search-car.html" class="nav-link">Cars</a></li>
+                    </ul>
+
+                    <a href="Sign-up.html" class="btn btn-autoworld mx-4"><i class="fa fa-user-circle mx-2"></i>Sign
+                        up</a>
+                    <a href="Sign-in.html" class="btn btn-autoworld mx-4"><span class="sm-btn-i mx-2"><i
+                                class="fa-solid fa-right-to-bracket"></i></span>Login</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+    <main>
+
+        <!-- Content Section -->
+
+        <section class="content-bankin-f-1 d-flex align-items-center text-light">
+            <div class="container text-center" style="margin-top: 260px;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header-content">
+                            <h3 class="fw-bold"><span class="text-autoworld">Auto World </span>- Your Trusted Car
+                                Showroom
+                            </h3>
+                            <h1 class="display-3 fw-bold text-white">
+                                <span class="text-autoworld">AutoWorld</span> - Provide <span
+                                    class="text-autoworld">Banking</span> system</span>
+                            </h1>
+                            <p class="lead text-white">These trusted banking organizations are here to help, offering
+                                easy loan options and supporting AutoWorld. We're proud to call some of them our
+                                partners, working together to make your car-buying journey smoother and stress-free.</p>
+                            <div class="d-flex justify-content-center">
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <a href="#bank-gives-loan"
+                                        class=" btn btn-autoworld-dec text-decoration-none btn-lg p-3 d-flex align-items-center justify-content-center gap-2">
+                                        <span class="position-relative">
+                                            <i class="fa-solid fa-bank"></i>
+                                            Checkout Banks
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Features Section -->
+                <div class="features-section container py-5 mt-5">
+                    <div class="row text-center text-white">
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-desktop fa-2x text-autoworld"></i>
+                            <h5 class="fw-bold">Online Support</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-user-friends fa-2x text-autoworld"></i>
+                            <h5 class="fw-bold">Customer Services</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-bank fa-2x text-autoworld"></i>
+                            <h5 class="fw-bold">Availble Banks</h5>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fa-solid fa-sack-dollar fa-2x text-autoworld"></i>
+                            <h5 class="fw-bold">Gives Loans</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- our Partners bank -->
+        <section class="our-patner-bank  mt-5">
+         <div class="text-center">
+         <h2 class="display-5 fw-bold">Partners<span class="text-autoworld"> Banks</span></h2>
+         <p class="lead">These are the banks that we have partnered with to make your car buying journey easier</p>
+         </div>
+            <div class="container mt-5">
+                <div class="row gy-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="custom-card card h-100" style="width: 100%;">
+                            <img src="Images/Banks/HBL.png" class="card-img-top" alt="banks logo" class="img-fluid"
+                                style="height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title">HBL (Habib Bank Limited)</h5>
+                                <p class="card-text">HBL offers car financing options with competitive rates, quick
+                                    approvals, and excellent customer service for your dream car.</p>
+                                    <button class="btn btn-autoworld-bg" data-bs-toggle="modal" data-bs-target="#bankModal">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="custom-card card h-100" style="width: 100%;">
+                            <img src="Images/Banks/UBL.png" class="card-img-top" alt="banks logo" class="img-fluid"
+                                style="height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title">UBL (United Bank Limited)</h5>
+                                <p class="card-text">Experience seamless car loans with UBL. Enjoy affordable
+                                    installments,
+                                    easy processing, and tailored solutions for every car enthusiast.</p>
+                                    <button class="btn btn-autoworld-bg" data-bs-toggle="modal" data-bs-target="#bankModal-1">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="custom-card card h-100" style="width: 100%;">
+                            <img src="Images/Banks/MCB.png" class="card-img-top" alt="banks logo" class="img-fluid"
+                                style="height: 200px;">
+                            <div class="card-body">
+                                <h5 class="card-title">MCB Bank</h5>
+                                <p class="card-text">MCB Bank provides hassle-free car financing with low interest
+                                    rates,
+                                    long tenures, and fast approval to make your journey smoother.</p>
+                                    <button class="btn btn-autoworld-bg" data-bs-toggle="modal" data-bs-target="#bankModal-2">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Bank give loan -->
+         <section class="bank-gives-loan" id="bank-gives-loan">
+            <div class="container my-5">
+                <div class="text-center">
+                    <h2 class="display-5 fw-bold mt-5">Our <span class="text-autoworld">Banks</span> give loan</h2>
+                    <p class="lead mb-5">These are some of the banks that gives gives you loan</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-3">
+                            <img src="Images/Banks/HBL.png" class="card-img-top" alt="HBL Bank">
+                            <div class="card-body text-center bg-dark text-white">
+                                <h5 class="card-title">HBL (Habib Bank Limited) <i class="fa fa-bank"></i></h5>
+                                <p class="card-text">Get fast loans with flexible repayment options at HBL (Habib Bank Limited).</p>
+                                <a href="https://www.hbl.com/" class="btn btn-autoworld w-10" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-3">
+                            <img src="Images/Banks/UBL.png" class="card-img-top" alt="UBL Bank">
+                            <div class="card-body text-center bg-dark text-white">
+                                <h5 class="card-title">UBL (United Bank Limited) <i class="fa fa-bank"></i></h5>
+                                <p class="card-text">Trusted by many, UBL (United Bank Limited) offers excellent loan services.</p>
+                                <a href="https://www.ubldigital.com/" class="btn btn-autoworld w-10" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-3">
+                            <img src="Images/Banks/MCB.png" class="card-img-top" alt="MCB Bank">
+                            <div class="card-body text-center bg-dark text-white">
+                                <h5 class="card-title">MCB Bank <i class="fa fa-bank"></i></h5>
+                                <p class="card-text">Get the best rates for your personal loans at MCB Bank.</p>
+                                <a href="https://www.mcb.com.pk/" class="btn btn-autoworld w-10" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-3">
+                            <img src="Images/Banks/bank-alfalah.png" class="card-img-top" alt="Bank Alfalah">
+                            <div class="card-body text-center bg-dark text-white">
+                                <h5 class="card-title">Bank Alfalah <i class="fa fa-bank"></i></h5>
+                                <p class="card-text">Quick and easy loan application process at Bank Alfalah.</p>
+                                <a href="https://www.bankalfalah.com/" class="btn btn-autoworld w-10" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-3">
+                            <img src="Images/Banks/meezan.png" class="card-img-top" alt="Meezan Bank">
+                            <div class="card-body text-center bg-dark text-white">
+                                <h5 class="card-title">Meezan Bank <i class="fa fa-bank"></i></h5>
+                                <p class="card-text">Get low-interest loans for personal or business needs at Meezan Bank.</p>
+                                <a href="https://www.meezanbank.com/" class="btn btn-autoworld w-10" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-3">
+                            <img src="Images/Banks/allied.png" class="card-img-top" alt="Allied Bank">
+                            <div class="card-body text-center bg-dark text-white">
+                                <h5 class="card-title">Allied Bank <i class="fa fa-bank"></i></h5>
+                                <p class="card-text">Choose Allied Bank for fast loan approvals and excellent customer service.</p>
+                                <a href="https://www.abl.com/" class="btn btn-autoworld w-10" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-3">
+                            <img src="Images/Banks/standard-chartered.jpg" class="card-img-top" alt="Standard Chartered">
+                            <div class="card-body text-center bg-dark text-white">
+                                <h5 class="card-title">Standard Chartered <i class="fa fa-bank"></i></h5>
+                                <p class="card-text">Reliable loan options with flexible terms at Standard Chartered.</p>
+                                <a href="https://www.sc.com/" class="btn btn-autoworld w-10" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-3">
+                            <img src="Images/Banks/nbp.png" class="card-img-top" alt="National Bank of Pakistan">
+                            <div class="card-body text-center bg-dark text-white">
+                                <h5 class="card-title">National Bank of Pakistan <i class="fa fa-bank"></i></h5>
+                                <p class="card-text">Affordable and reliable loans offered by National Bank of Pakistan.</p>
+                                <a href="https://www.nbp.com.pk/" class="btn btn-autoworld w-10" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-3">
+                            <img src="Images/Banks/askari.jpg" class="card-img-top" alt="Askari Bank">
+                            <div class="card-body text-center bg-dark text-white">
+                                <h5 class="card-title">Askari Bank <i class="fa fa-bank"></i></h5>
+                                <p class="card-text">Join Askari Bank for quick loan processing and excellent rates.</p>
+                                <a href="https://askaribank.com/" class="btn btn-autoworld w-10" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+         </section>
+
+
+    </main>
+
+
+    <footer class="text-center text-lg-start bg-autoworld-sec text-light mt-5">
+        <!-- Date & Time Section -->
+        <section>
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 d-flex justify-content-between">
+                        <p id="dateTime" class="mt-3 ms-2"></p>
+                        <p id="geoLocation" class="mt-3 ms-2"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            <section>
+                <div class="container text-center text-md-start mt-">
+                    <div class="row footer-row-custom">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <img src="Images/favicon/logo-1.png" alt="" height="40px" width="50px" class="footer-logo">
+                                AutoWorld
+                            </h6>
+                            <p>
+                                Discover a wide range of cars to suit your style and budget. Performance, safety, and design
+                                all in one place.
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Cars
+                        </h6>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Audi</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Toyota</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Tesla</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">BMW</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p><a href="feedback.html" class="text-reset footer-a-txt-dec-none-class">Feedback</a></p>
+                        <p><a href="compare-car.html" class="text-reset footer-a-txt-dec-none-class">Compare</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Search Car</a></p>
+                        <p><a href="Sign-up.html" class="text-reset footer-a-txt-dec-none-class">Accounts</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <span>Get connected with us on social networks:</span>
+            <div>
+                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            AutoWorld © 2025 Copyright:
+            <a class="text-reset fw-bold" href="index.html">autoworld.com</a>
+        </div>
+    </footer>
+    <div class="gtranslate_wrapper"></div>
+
+    <script>
+        window.gtranslateSettings = {
+            default_language: "en",
+            languages: [
+                "en",
+                "it",
+                "es",
+                "fr",
+                "de",
+                "nl",
+                "da",
+                "pt",
+                "ar",
+                "zh-CN",
+                "ms",
+                "cs",
+                "sk",
+                "hu",
+                "bg",
+                "pl",
+                "ro",
+                "hr",
+                "sl",
+                "sr",
+                "bs",
+            ],
+            wrapper_selector: ".gtranslate_wrapper",
+        };
+
+        // This is for footer
+
+    function showDateTime() {
+        var now = new Date();
+        var dateTimeElement = document.getElementById('dateTime');
+        dateTimeElement.textContent = 'Date & Time: ' + now.toLocaleString();
+    }
+    setInterval(showDateTime, 1000); 
+
+    function showGeolocation() {
+        var geoLocationElement = document.getElementById('geoLocation');
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                geoLocationElement.textContent = 'Location: Latitude ' + latitude.toFixed(2) + ', Longitude ' + longitude.toFixed(2);
+            }, function () {
+                geoLocationElement.textContent = 'Location: Unable to retrieve location.';
+            });
+        } else {
+            geoLocationElement.textContent = 'Location: Geolocation not supported.';
+        }
+    }
+    showGeolocation();
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js"></script>
+
+
+    <!-- modal area -->
+    <section>
+        <!-- Bank Modal -->
+        <div class="modal modal-lg fade custom-modal text-autoworld" id="bankModal" tabindex="-1"
+            aria-labelledby="bankModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Green corner decors -->
+                    <div class="corner-decor top-left"></div>
+                    <div class="corner-decor top-right"></div>
+                    <div class="corner-decor bottom-left"></div>
+                    <div class="corner-decor bottom-right"></div>
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-autoworld" id="bankModalLabel">Bank Details <i
+                                class="fa fa-bank"></i></h5>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <section>
+                            <div class="container">
+                                <!-- Bank Information -->
+                                <p class="section-title"><strong>Bank Overview</strong></p>
+                                <div class="bank-info">
+                                    <p><strong>Bank Name:</strong> <span id="bankName">HBL - Habib Bank Limited</span>
+                                    </p>
+                                    <p><strong>Services:</strong> Car financing, affordable loans, quick approvals.</p>
+                                    <p><strong>Contact:</strong> 021-111-111-425</p>
+                                    <p><strong>Website:</strong> <a href="https://www.hbl.com/" target="_blank"
+                                            id="bankWebsite">HBL -  Habib Bank Limited</a></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer p-4 justify-content-center">
+                        <button type="button" class="btn btn-autoworld w-10" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bank Modal -->
+        <div class="modal modal-lg fade custom-modal text-autoworld" id="bankModal-1" tabindex="-1"
+            aria-labelledby="bankModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="corner-decor top-left"></div>
+                    <div class="corner-decor top-right"></div>
+                    <div class="corner-decor bottom-left"></div>
+                    <div class="corner-decor bottom-right"></div>
+
+                    <div class="modal-header">
+                        <h5 class="modal-title text-autoworld" id="bankModalLabel">Bank Details <i
+                                class="fa fa-bank"></i></h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <section>
+                            <div class="container">
+                                <p class="section-title"><strong>Bank Overview</strong></p>
+                                <div class="bank-info">
+                                    <p><strong>Bank Name:</strong> <span id="bankName">UBL - United Bank Limited</span>
+                                    </p>
+                                    <p><strong>Services:</strong> Car financing, affordable loans, quick approvals.</p>
+                                    <p><strong>Contact:</strong> 021-111-111-425</p>
+                                    <p><strong>Website:</strong> <a href="https://www.ubldigital.com/" target="_blank"
+                                            id="bankWebsite">UBL - Digital</a></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="modal-footer p-4 justify-content-center">
+                        <button type="button" class="btn btn-autoworld w-10" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bank Modal -->
+        <div class="modal modal-lg fade custom-modal text-autoworld" id="bankModal-2" tabindex="-1"
+            aria-labelledby="bankModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Green corner decors -->
+                    <div class="corner-decor top-left"></div>
+                    <div class="corner-decor top-right"></div>
+                    <div class="corner-decor bottom-left"></div>
+                    <div class="corner-decor bottom-right"></div>
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title text-autoworld" id="bankModalLabel">Bank Details <i
+                                class="fa fa-bank"></i></h5>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <section>
+                            <div class="container">
+                                <!-- Bank Information -->
+                                <p class="section-title"><strong>Bank Overview</strong></p>
+                                <div class="bank-info">
+                                    <p><strong>Bank Name:</strong> <span id="bankName">MCB - Multinational Business Link</span>
+                                    </p>
+                                    <p><strong>Services:</strong> Car financing, affordable loans, quick approvals.</p>
+                                    <p><strong>Contact:</strong> 021-111-111-425</p>
+                                    <p><strong>Website:</strong> <a href="https://www.mcb.com.pk" target="_blank"
+                                            id="bankWebsite">MCB Bank</a></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer p-4 justify-content-center">
+                        <button type="button" class="btn btn-autoworld w-10" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Script & CDn's -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- For the Navbar -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

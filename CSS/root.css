@@ -1,0 +1,311 @@
+/* 
+ ________________
+/
+| N A V B A R
+\________________
+*/
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, padding-top 0.3s ease;
+    color: white;
+}
+
+.navbar.solid {
+    background-color: #13141ae8 !important;
+    color: #fff !important;
+}
+
+.navbar.transparent {
+    background: transparent !important;
+    color: white;
+    padding-top: 25px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* 
+ ________________
+/
+| B U T T O N S
+\________________
+*/
+
+/* __ Normal Button ___  */
+
+.btn-autoworld {
+    color: #13141A !important;
+    background-color: #46d993 !important;
+}
+
+.btn-autoworld:hover {
+    color: #13141A !important;
+    background-color: #a0a0a0 !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* __ Decorated Button ___  */
+.btn-autoworld-dec {
+    position: relative;
+    color: #13141A;
+    background-color: #46D993;
+    border: none;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-autoworld-dec:hover {
+    background-color: #a0a0a0;
+}
+
+.btn-autoworld-dec:hover .text {
+    color: white !important;
+}
+
+.btn-autoworld-dec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #13141A;
+    color: white !important;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.btn-autoworld-dec:hover::before {
+    left: 0;
+}
+
+.btn-autoworld-dec-pt:hover {
+    color: white;
+}
+
+/* Rounded Button */
+.btn-autoworld-round {
+    background: none;
+    color: #46D993 !important;
+    border: #46D993 1px solid;
+    border-radius: 100px;
+}
+
+.btn-autoworld-dec-i:hover i {
+    transform: translateX(12px);
+    transition: transform 0.25s ease;
+}
+
+.btn-autoworld-dec-i i {
+    transition: transform 0.25s ease;
+}
+
+
+.btn-autoworld-bg {
+    background: none;
+    border: #13141A 2px solid;
+    border-radius: 1em 0 !important;
+    transition: 0.25s;
+}
+
+.btn-autoworld-bg:hover {
+    background: none;
+    border: #13141A 2px solid;
+    border-radius: 1em 0 !important;
+    transform: scale(1.1);
+}
+
+
+/* 
+ ________________
+/
+| B A C K G R O U N D S
+\________________
+*/
+
+
+.bg-autoworld {
+    color: #13141A !important;
+    background-color: #46D993 !important;
+}
+
+.bg-autoworld-sec {
+    background-color: #13141A !important;
+}
+
+.bg-autoworld-an {
+    background-color: #f1f1f1 !important;
+}
+
+/* 
+ ________________
+/
+| T E X T
+\________________
+*/
+
+.text-autoworld {
+    color: #46d993 !important;
+}
+
+.text-autoworld-g-50 {
+    color: #46d99292 !important;
+}
+
+.text-autoworld-sec {
+    color: #13141A !important;
+}
+
+.text-autoworld-50 {
+    color: #13141a80 !important;
+}
+
+.text-autoworld-an-50 {
+    color: #d3d3d3 !important;
+}
+
+
+/* 
+________________
+/
+| F O O T E R
+\________________
+*/
+
+.footer-a-txt-dec-none-class {
+    text-decoration: none;
+}
+
+.footer-logo {
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
+.footer-row-custom {
+    padding-top: 80px;
+}
+
+.w-10 {
+    width: 250px;
+}
+
+.fw-bold-50 {
+    font-weight: 500;
+}
+
+
+/* 
+________________
+/
+| B A C K G R O U N D  -  I M A G E S - OWN Bootstrap
+\________________
+*/
+
+.usual-bg {
+    background: url('https://i.ibb.co/J367bgj/Usual-BG.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* 
+________________
+/
+| C A R D
+\________________
+*/
+
+.autoworld-card:hover {
+    border: 1px solid #46d993;
+    box-shadow: inset;
+    transform: scale(1.09);
+    box-shadow: inset 0 0 50px #46d993;
+}
+
+.custom-icon-round-bg {
+    background-color: #fff;
+    border-radius: 100px;
+    transition: 0.25s;
+}
+
+.custom-icon-round-bg:hover {
+    background-color: #46d993;
+    border-radius: 100px;
+    color: #13141A !important;
+}
+
+.custom-icon-round-bg-on:hover {
+    background-color: #46d993;
+    border-radius: 100px;
+    color: #13141A !important;
+}
+
+/* 
+________________
+/
+| M O D A L
+\________________
+*/
+
+/* Modal box styles */
+.custom-modal .modal-content {
+    background-color: #1f1f1f;
+    color: white;
+    border: 2px solid #46d993;
+    border-radius: 8px;
+    position: relative;
+}
+
+
+.custom-modal .modal-body {
+    padding: 16px 32px;
+    font-size: 1rem;
+    color: #cfcfcf;
+}
+
+
+.custom-modal .corner-decor {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #46d993;
+}
+
+.custom-modal .corner-decor.top-left {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+}
+
+.custom-modal .corner-decor.top-right {
+    top: 0;
+    right: 0;
+    border-top-right-radius: 8px;
+}
+
+.custom-modal .corner-decor.bottom-left {
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 8px;
+}
+
+.custom-modal .corner-decor.bottom-right {
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 8px;
+}
+
+/* borders */
+
+.round-100per {
+    border-radius: 100%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-light #navbarNav ul .nav-link{
+        color: white;
+    }
+}

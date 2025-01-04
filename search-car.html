@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Car | AutoWorld</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/favicon/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/search-car.css">
+    <!-- Root CSS -->
+    <link rel="stylesheet" href="CSS/root.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-light navbar-expand-lg transparent fixed-top">
+            <a class="navbar-brand m-auto px-5" href="index.html">
+                <span>
+                    <img src="Images/favicon/logo-1.png" alt="Auto-World" class="" height="50px" width="70px">
+                </span>
+                Auto World
+            </a>
+
+            <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end bg-autoworld-sec text-light" id="navbarNav" tabindex="-1"
+                aria-labelledby="navbarNavLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto px-5">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about-us.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="search-car.html" class="nav-link">Cars</a></li>
+                    </ul>
+
+                    <a href="Sign-up.html" class="btn btn-autoworld mx-4"><i class="fa fa-user-circle mx-2"></i>Sign
+                        up</a>
+                    <a href="Sign-in.html" class="btn btn-autoworld mx-4"><span class="sm-btn-i mx-2"><i class="fa-solid fa-right-to-bracket"></i></span>Login</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- Top Section -->
+        <section class="top-section bg-autoworld-an d-flex flex-column justify-content-center px-5 position-relative"
+            style="height: 250px;">
+            <div class="container">
+                <h1 class="fw-bold display-4">Vehicle</h1>
+                <nav class="breadcrumb mt-2">
+                    <a href="index.html" class="text-dark fw-bold">Home</a> <span class="mx-2">—</span>
+                    <span class="text-muted">Vehicle</span>
+                </nav>
+            </div>
+
+            <!-- Sorting Fields Overlapping -->
+            <div class="sorting-fields bg-white shadow p-4 rounded-3 position-absolute start-50 translate-middle-x"
+                style="top: 100%; margin-top: -2rem; z-index: 10; max-width: 1140px; width: 90%;">
+                <div class="container">
+                    <div class="row g-2 align-items-center justify-content-center">
+                        <!-- Condition Field -->
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <select name="Vehicle-condition" id="Vehicle-condition" class="form-select p-2">
+                                <option selected disabled>Select Condition</option>
+                                <option value="Brand-New">Brand New</option>
+                                <option value="Used-Car">Used Car</option>
+                            </select>
+                        </div>
+
+                        <!-- Color Field -->
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <select name="Car-Color" id="Car-Color" class="form-select p-2">
+                                <option selected disabled>Select Color</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                                <option value="Silver">Silver</option>
+                            </select>
+                        </div>
+
+                        <!-- Brand Field -->
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <select name="Select-Car-Brands" id="Select-Car-Brands" class="form-select p-2">
+                                <option selected disabled>Select Brand</option>
+                                <option value="Porsche">Porsche</option>
+                                <option value="Mercedes">Mercedes</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Ferreri">Ferreri</option>
+                                <option value="Lamborghini">Lamborghini</option>
+                                <option value="Tesla">Tesla</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Jeep">Jeep</option>
+                                <option value="Ford">Ford</option>
+                                <option value="McLaren">McLaren</option>
+                                <option value="LandRover">LandRover</option>
+                                <option value="Bugatti">Bugatti</option>
+                                <option value="Astin-Martin">Astin Martin</option>
+                                <option value="Lexus">Lexus</option>
+                                <option value="Dodge">Dodge</option>
+                                <option value="Lucid">Lucid</option>
+                                <option value="Rolls-Royce">Rolls Royce</option>
+                            </select>
+                        </div>
+
+                        <!-- Search Button -->
+                        <div class="col-12 col-lg-2 d-grid">
+                            <span class="btn-autoworld-dec-pt">
+                                <button type="button" class="btn btn-autoworld-dec p-3 w-10">
+                                    <span class="position-relative">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        Search
+                                    </span>
+                            </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Products Area -->
+        <section class="product-area py-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-md-4 col-sm-6" data-condition="Used-Car" data-color="White" data-brand="Ford" data-speed="160-180 km/h" 
+                    data-fuel="18 mpg City, 21 mpg Highway" data-engine="3.0-liter EcoBoost">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/ford bronco.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Ford Bronco ( SUV )</h4>
+                                <p class="card-text fw-bold-50">$33,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 160-180 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 18 mpg City , 21mpg Highway
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 3.0-liter EcoBoost
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+
+                            </div>
+
+                            <img src="Images/Car logos/ford.JPG" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6" data-condition="Brand-New" data-color="Black" data-brand="Jeep">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Jeep Wrangler.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Jeep Wrangler( SUV )</h4>
+                                <p class="card-text fw-bold-50">$23,250</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 160-180 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 20 mpg City, 22 mpg Highway
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 1995cc
+
+
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/wrangler.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6" data-condition="Brand-New" data-color="Black" data-brand="Toyota">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Toyota 4Runner.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Toyota 4Runner ( SUV )
+                                </h4>
+                                <p class="card-text fw-bold-50">$30,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 160-180 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 8 mpg City, 22 mpg Highway
+
+
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 3.0 L V6
+
+
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/Toyota.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Silver" data-brand="LandRover">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Land Rover Defender.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">LandRover Defender ( SUV )</h4>
+                                <p class="card-text fw-bold-50">$39,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 210-230 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 19 mpg City, 26 mpg Highway
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 2992 cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/rover.JPG" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Silver" data-brand="BMW">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/bmw x5.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">BMW X5 ( SUV )</h4>
+                                <p class="card-text fw-bold-50">$45,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> undefined
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> undefined
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> undefined
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/BMW.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Silver" data-brand="Ferrari">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Ferrari 296 GTB .jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Ferrari 296 GTB ( EXOTIC )
+                                </h4>
+                                <p class="card-text fw-bold-50">$240,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 325+ km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 15 mpg combined (estimated)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 5204 cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/ferreri.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Red" data-brand="Lamborghini">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Lamborghini Huracan .jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Lamborghini Huracan ( EXOTIC )
+                                </h4>
+                                <p class="card-text fw-bold-50">$150,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 341 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 18 mpg combined (estimated)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 3,994 cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/Lamborghini.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="White" data-brand="Mclaren">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Mclaren 720S.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">McLaren 720S ( EXOTIC )</h4>
+                                <p class="card-text fw-bold-50">$225,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 285-330+ km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 20 mpg combined (varies by model)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 3,994 cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/mclaren.JPG" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Black" data-brand="Porsche">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Porsche 911.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Porsche 911 ( EXOTIC )</h4>
+                                <p class="card-text fw-bold-50">$75,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 322 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 19 mpg combined (estimated)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 2981 cc and 3996 cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/Porsche.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Silver" data-brand="Astin-Martin">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/MArtin.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Aston Martin DB11: ( EXOTIC )
+                                </h4>
+                                <p class="card-text fw-bold-50">$150,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 325+ km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 17 mpg combined (estimated)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 5,204 cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/BMW.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Black" data-brand="Audi">
+                        <div class="card position-relative">
+                            <img class="card-img-top img-fluid"
+                                src="Images/Car Images/Audi R8.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Audi R8 ( EXOTIC )</h4>
+                                <p class="card-text fw-bold-50">$112,500</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 325+ km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 18 mpg combined (estimated)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> Audi R8
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/Audi.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Silver" data-brand="Mercedes">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Mercedes-AMG GT.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Mercedes-AMG GT ( EXOTIC )</h4>
+                                <p class="card-text fw-bold-50">$90,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 325+ km/h
+
+
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 18 mpg combined (estimated)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 3982cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/Mercedes.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Red" data-brand="Lexus">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Lexus LFA.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Lexus LFA ( EXOTIC )</h4>
+                                <p class="card-text fw-bold-50">$300,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 490+ km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 16 mpg combined (estimated)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 4,805cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/Lexus.jpg" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Blue" data-brand="Bugatti">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Bugatti Chiron.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Bugatti Chiron ( EXOTIC )</h4>
+                                <p class="card-text fw-bold-50">$2,250,000</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 140 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 12 mpg combined (estimated)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 7,993 cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/bugatti.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Silver" data-brand="Dodge">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/dodge challenger.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Dodge Challenger: ( EXOTIC )</h4>
+                                <p class="card-text fw-bold-50">$24,521</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 60 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 12-14 mpg City, 18-21 mpg Highway
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 6.4-liter V8
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/Dodge.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Black" data-brand="Mercedes">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Mercedes-Benz S-Class.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Mercedes-Benz Vision EQXX ( FUTURISTIC )</h4>
+                                <p class="card-text fw-bold-50">$82,500</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 250 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> Electric (Estimated Range: 600+ miles)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> Mercedes-Benz Vision EQXX
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/Mercedes.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Black" data-brand="Rolls-Royce">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Rolls-Royce Cullinan Black Badge.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Rolls-Royce Cullinan Black Badge ( FUTURISTIC )</h4>
+                                <p class="card-text fw-bold-50">$565,500</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 60 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 12-14 mpg combined (estimated)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 6750 cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/Rolls-Royce.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Silver" data-brand="Lucid">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Lucid.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Lucid Air ( FUTURISTIC )</h4>
+                                <p class="card-text fw-bold-50">$66,675</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 320 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 18 mpg City , 21mpg Highway
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 88.0 kWh
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/BMW.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="Silver" data-brand="Ford">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Mustang Mach-E.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Ford Mustang Mach-E ( FUTURISTIC )</h4>
+                                <p class="card-text fw-bold-50">(Premium model) $13,748</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 250 km/h
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> Electric (Estimated Range: 210-300 miles)
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> don't have cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/ford.JPG" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6"  data-condition="Brand-New" data-color="White" data-brand="Toyota">
+                        <div class="card position-relative">
+                            <img class="card-img-top"
+                                src="Images/Car Images/Toyota Prius.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Toyota Prius ( FUTURISTIC )</h4>
+                                <p class="card-text fw-bold-50">$20,250</p>
+                                <div
+                                    class="sm-details d-flex justify-content-between align-items-center flex-wrap text-autoworld-50">
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gauge-high"></i></span> 162 - 180 KM/H
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-gas-pump"></i></span> 50-58 mpg combined.
+                                    </p>
+                                    <p class="mb-0 d-flex align-items-center">
+                                        <span class="px-1"><i class="fa-solid fa-car"></i></span> 1,798cc
+                                    </p>
+                                </div>
+                                <hr>
+
+                                <button class="btn btn-autoworld mt-3 view-details" data-bs-toggle="modal" data-bs-target="#productModal">View Details</button>
+                            </div>
+
+                            <img src="Images/Car logos/Toyota.png" alt="BMW" height="50px" width="50px"
+                                class="position-absolute end-0 bottom-0 m-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="display-2 fw-bold" id="search-feild"></h2>
+        </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="text-center text-lg-start bg-autoworld-sec text-light mt-5">
+        <!-- Date & Time Section -->
+        <section>
+            <div class="container text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 d-flex justify-content-between">
+                        <p id="dateTime" class="mt-3 ms-2"></p>
+                        <p id="geoLocation" class="mt-3 ms-2"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+            <section>
+                <div class="container text-center text-md-start mt-">
+                    <div class="row footer-row-custom">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <img src="Images/favicon/logo-1.png" alt="" height="40px" width="50px" class="footer-logo">
+                                AutoWorld
+                            </h6>
+                            <p>
+                                Discover a wide range of cars to suit your style and budget. Performance, safety, and design
+                                all in one place.
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Cars
+                        </h6>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Audi</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Toyota</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Tesla</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">BMW</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p><a href="feedback.html" class="text-reset footer-a-txt-dec-none-class">Feedback</a></p>
+                        <p><a href="compare-car.html" class="text-reset footer-a-txt-dec-none-class">Compare</a></p>
+                        <p><a href="search-car.html" class="text-reset footer-a-txt-dec-none-class">Search Car</a></p>
+                        <p><a href="Sign-up.html" class="text-reset footer-a-txt-dec-none-class">Accounts</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <span>Get connected with us on social networks:</span>
+            <div>
+                <a href="" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                <a href="" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            AutoWorld © 2025 Copyright:
+            <a class="text-reset fw-bold" href="index.html">autoworld.com</a>
+        </div>
+    </footer>
+    <div class="gtranslate_wrapper"></div>
+
+    <script>
+        window.gtranslateSettings = {
+            default_language: "en",
+            languages: [
+                "en",
+                "it",
+                "es",
+                "fr",
+                "de",
+                "nl",
+                "da",
+                "pt",
+                "ar",
+                "zh-CN",
+                "ms",
+                "cs",
+                "sk",
+                "hu",
+                "bg",
+                "pl",
+                "ro",
+                "hr",
+                "sl",
+                "sr",
+                "bs",
+            ],
+            wrapper_selector: ".gtranslate_wrapper",
+        };
+
+        // This is for footer
+
+    function showDateTime() {
+        var now = new Date();
+        var dateTimeElement = document.getElementById('dateTime');
+        dateTimeElement.textContent = 'Date & Time: ' + now.toLocaleString();
+    }
+    setInterval(showDateTime, 1000); 
+
+    function showGeolocation() {
+        var geoLocationElement = document.getElementById('geoLocation');
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                geoLocationElement.textContent = 'Location: Latitude ' + latitude.toFixed(2) + ', Longitude ' + longitude.toFixed(2);
+            }, function () {
+                geoLocationElement.textContent = 'Location: Unable to retrieve location.';
+            });
+        } else {
+            geoLocationElement.textContent = 'Location: Geolocation not supported.';
+        }
+    }
+    showGeolocation();
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js"></script>
+
+
+    
+
+
+    <!-- script -->
+    <script src="JS/search-car.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const conditionSelect = document.getElementById('Vehicle-condition');
+            const colorSelect = document.getElementById('Car-Color');
+            const brandSelect = document.getElementById('Select-Car-Brands');
+            const searchBtn = document.querySelector('.btn-autoworld-dec'); // Search button
+    
+            const carCards = document.querySelectorAll('.product-area .row .col-md-4'); // All car cards
+            const noResultsMessage = document.createElement('p'); // Create a message element
+            noResultsMessage.textContent = "No cars available matching your search criteria.";
+            noResultsMessage.classList.add('text-center', 'text-muted', 'mt-4'); // Add styles
+            noResultsMessage.style.display = 'none'; // Initially hidden
+    
+            // Append the message to the parent container
+            const productArea = document.querySelector('.product-area');
+            productArea.appendChild(noResultsMessage);
+    
+            function filterCars() {
+                const selectedCondition = conditionSelect.value;
+                const selectedColor = colorSelect.value;
+                const selectedBrand = brandSelect.value;
+                let hasResults = false; // Flag to track if any card matches
+    
+                carCards.forEach(card => {
+                    const cardCondition = card.getAttribute('data-condition');
+                    const cardColor = card.getAttribute('data-color');
+                    const cardBrand = card.getAttribute('data-brand');
+    
+                    // Show or hide the card based on the selected filters
+                    const conditionMatch = selectedCondition ? cardCondition === selectedCondition : true;
+                    const colorMatch = selectedColor ? cardColor === selectedColor : true;
+                    const brandMatch = selectedBrand ? cardBrand === selectedBrand : true;
+    
+                    if (conditionMatch && colorMatch && brandMatch) {
+                        card.style.display = 'block'; // Show card
+                        hasResults = true; // At least one result found
+                    } else {
+                        card.style.display = 'none'; // Hide card
+                    }
+                });
+    
+                // Show or hide the no-results message
+                noResultsMessage.style.display = hasResults ? 'none' : 'block';
+            }
+    
+            // Add event listener for the search button click
+            searchBtn.addEventListener('click', filterCars);
+    
+            // Modal logic
+            document.querySelectorAll('.view-details').forEach(button => {
+                button.addEventListener('click', () => {
+                    const card = button.closest('.col-md-4'); // Get the closest card container
+                    const modalBody = document.getElementById('modal-body-content');
+    
+                    if (!card) {
+                        console.error("Card element not found");
+                        return;
+                    }
+    
+                    // Extracting data from the card
+                    const title = card.querySelector('.card-title')?.textContent || "No Title";
+                    const price = card.querySelector('.card-text')?.textContent || "No Price";
+                    const imageSrc = card.querySelector('.card-img-top')?.src || "";
+                    const speed = card.querySelector('.card-text').nextElementSibling.children[0]?.textContent || "No Speed Info";
+                    const fuel = card.querySelector('.card-text').nextElementSibling.children[1]?.textContent || "No Fuel Info";
+                    const engine = card.querySelector('.card-text').nextElementSibling.children[2]?.textContent || "No Engine Info";
+    
+                    // Populate the modal with a two-column layout
+                    modalBody.innerHTML = `
+                        <div class="row">
+                            <!-- Image Column -->
+                            <div class="col-md-6 text-center">
+                                <img src="${imageSrc}" alt="${title}" class="img-fluid rounded mb-3" style="max-height: 300px;">
+                            </div>
+                            <!-- Details Column -->
+                            <div class="col-md-6">
+                                <h3>${title}</h3>
+                                <p class="text-muted">${price}</p>
+                                <hr>
+                                <p><strong>Top Speed:</strong> ${speed}</p>
+                                <p><strong>Fuel Efficiency:</strong> ${fuel}</p>
+                                <p><strong>Engine Capacity:</strong> ${engine}</p>
+                                <a href="payment.html" class="btn btn-autoworld">Buy Now</a>
+                            </div>
+                        </div>
+                    `;
+    
+                    // Show the modal
+                    const productModal = new bootstrap.Modal(document.getElementById('productModal'));
+                    productModal.show();
+                });
+            });
+        });
+    </script>
+    
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Vehicle Details</h5>
+                </div>
+                <div class="modal-body" id="modal-body-content">
+                    <!-- Dynamic content will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

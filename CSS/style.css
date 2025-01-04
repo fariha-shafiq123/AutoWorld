@@ -1,0 +1,150 @@
+body {
+    background: #FFF;
+}
+
+
+
+.why-choose-us {
+    margin-top: 200px;
+}
+
+.car-own-css {
+    cursor: pointer;
+}
+
+.top-featured-car-container {
+    padding-bottom: 30px;
+}
+
+
+
+.content-section-f-1 {
+    background: url('https://i.ibb.co/Kz0JPmW/F-BG-F-2.jpg') no-repeat center center;
+    background-size: cover;
+    height: 850px;
+}
+
+.content-sec-p {
+    font-size: 1.5rem;
+    font-weight: 350;
+}
+
+.content-sec-2 {
+    margin-top: 300px;
+}
+
+/* _____M A R Q U E E _ L I K E - A R E A___ */
+.scrolling-text-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #13141A;
+    color: white;
+    padding: 30px;
+}
+
+.scrolling-text-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+    font-size: clamp(1rem, 3vw, 3rem);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 600px) {
+    .scrolling-text {
+        font-size: clamp(1rem, 4vw, 2rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .scrolling-text {
+        font-size: clamp(1rem, 2vw, 2.5rem);
+    }
+}
+
+.features-section {
+    margin-top: 200px;
+}
+
+.why-choose-us {
+    background-color: #f1f1f1 !important;
+    color: #13141A !important;
+}
+
+
+.why-choose-us i {
+    color: #46D993 !important;
+}
+
+.card-img-own-css {
+    height: 80px !important;
+    width: 90px !important;
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+.sell-your-car {
+    background: url('https://i.ibb.co/mNtD2Ww/Sell-your-car-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.sell-your-car-f-col {
+    margin-top: 150px;
+}
+
+.feedback-bg {
+    max-height: 1000px;
+}
+
+.text-with-line {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text-with-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -4rem;
+    width: 50px; 
+    height: 2px; 
+    background-color: #ffffff7e;
+    transform: translateY(-50%);
+}
+
+.section-title {
+    font-size: 1.2rem;
+    color: #46d993;
+    margin-bottom: 1rem;
+}
+
+.form-control-custom {
+    background-color: #292929;
+    color: #ffffff;
+    border: 1px solid #46d993;
+    border-radius: 4px;
+}
+
+.form-control-custom:focus {
+    border-color: #3bbf7f;
+    box-shadow: 0 0 5px #46d993;
+}
+

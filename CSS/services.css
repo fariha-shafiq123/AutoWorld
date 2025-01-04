@@ -1,0 +1,18 @@
+.content-section-f-1 {
+    background: url('https://i.ibb.co/MD1QPdC/Usual-BG-Wrench.png') no-repeat center center;
+    background-size: cover;
+    height: 850px;
+}
+
+.form-control {
+    background: none;
+    border: 2px solid #46d993;
+}
+.form-control:focus {
+    background: none;
+    box-shadow: none;
+    color: white;
+}
+.form-control::placeholder {
+    color: white;
+}
